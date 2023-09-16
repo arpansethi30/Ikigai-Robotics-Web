@@ -1,0 +1,566 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-width: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.futuristic {
+  font-family: "Michroma", sans-serif;
+}
+
+.para-text {
+  @apply leading-[1.8] opacity-70;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 120px;
+  padding: 30px;
+  /* gap: 30px; */
+}
+
+.brand {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+nav {
+  flex: 1.3;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li a.link {
+  transition: all 250ms ease-in-out;
+  font-weight: 500;
+}
+
+nav ul li a.link:hover {
+  text-decoration: none;
+  color: #5d40ff;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+}
+
+.background-gradient {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(102, 51, 208, 0.42) 0%,
+    rgba(102, 51, 208, 0) 100%
+  );
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  top: -400px;
+  left: -400px;
+  opacity: 0.8;
+  z-index: -999;
+}
+
+.landing-area {
+  /* display: flex; */
+  margin-top: 100px;
+  padding: 0px 120px;
+  /* gap: 200px; */
+}
+
+.landing-area .landing-area-left {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  gap: 30px;
+}
+
+.landing-area .landing-area-right {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-area .landing-area-right img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.landing-area .landing-area-left .heading {
+  font-size: 4rem;
+  font-weight: 700;
+  /* margin-bottom: 30px; */
+}
+
+.landing-area .landing-area-left .cta .white-btn {
+  background-color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.landing-area .landing-area-left .cta .white-btn:hover {
+  background-color: #bdbdbd;
+}
+
+.landing-area .landing-area-left .cta .reference-btn {
+  background-color: transparent;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.landing-area .landing-area-left .cta .reference-btn:hover {
+  text-decoration: underline;
+}
+
+.innovation-section {
+  padding: 80px 120px;
+  /* border: solid thin #fff; */
+}
+
+.innovation-section .heading {
+  position: relative;
+  /* border: solid thin #fff; */
+  display: flex;
+  /* padding: 100px 0px 0px 100px; */
+  align-items: center;
+  margin: 100px 0px 0px 0px;
+  /* border-bottom: solid thin #fff; */
+}
+
+.innovation-section hr {
+  border: solid thin #212121;
+  width: 90%;
+  position: relative;
+  top: -5px;
+  margin: 0px;
+}
+
+.innovation-section {
+  margin-top: 100px;
+}
+
+.innovation-section .heading .heading-text {
+  flex: 1;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+  /* border: solid thin #fff; */
+}
+
+/* 
+.innovation-section .heading .heading-image {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 500px;
+  margin-right: 100px;
+}
+
+.innovation-section .heading .heading-image img {
+  width: 100%;
+} */
+
+.innovation-section .vision {
+  display: flex;
+  padding-top: 160px;
+}
+
+.innovation-section .vision .vision-image img {
+  width: 100%;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px;
+}
+
+.news .news-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.news .news-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  padding: 0px 100px 0px 0px;
+}
+
+.news .news-grid .news-outer-container {
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.news .news-grid .news-outer-container:hover {
+  background: linear-gradient(#6633d0, #ba33d0);
+}
+
+.news .news-grid .news-outer-container .news-inner-container {
+  background: url("./../public/assets/news-image.png") center center;
+  background-size: cover;
+  border-radius: 5px;
+  /* cursor: pointer; */
+}
+
+.news .news-grid .news-outer-container .news-inner-container .overlay {
+  background-color: #101010;
+  padding: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.news .news-grid .news-outer-container .news-inner-container .overlay:hover {
+  background-color: #101010ed;
+}
+
+.news
+  .news-grid
+  .news-outer-container
+  .news-inner-container
+  .overlay
+  .news-box-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.news
+  .news-grid
+  .news-outer-container
+  .news-inner-container
+  .overlay
+  .read-more {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.partners {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.partners img {
+  width: 8%;
+  object-fit: contain;
+}
+
+.footer {
+  background-color: #101010;
+}
+
+.footer .footer-content-container {
+  display: flex;
+  padding: 80px 120px 0px 120px;
+  /* border-bottom: solid thin #fff; */
+}
+
+.footer .footer-content-container .footer-container-left {
+  flex: 2.6;
+}
+
+.footer .footer-content-container .footer-container-left .get-in-touch-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footer
+  .footer-content-container
+  .footer-container-left
+  .subscribe-input
+  input {
+  background: transparent;
+  border: none;
+  border-bottom: solid thin #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 13px 0px;
+  position: relative;
+  width: 300px;
+  font-size: 1rem;
+  outline: none;
+  color: #fff;
+}
+
+.footer
+  .footer-content-container
+  .footer-container-left
+  .subscribe-input
+  button {
+  position: relative;
+  left: -103px;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 7px 20px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.footer .footer-content-container .footer-container-right {
+  flex: 1;
+}
+
+.footer .footer-content-container .footer-container-right .footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12%;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 80px;
+  gap: 20px;
+  /* justify-content: end; */
+  /* border: solid thin #fff; */
+  padding-left: 30%;
+}
+
+.resources .resources-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.resources .resources-links {
+  display: flex;
+  justify-content: space-around;
+  /* border: solid thin #fff; */
+  width: 100%;
+  box-shadow: border-box;
+}
+
+.resources .resources-links .resources-link-item {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-end {
+  display: flex;
+  padding: 0px 120px 50px 120px;
+}
+
+.footer-end .footer-links {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+  padding-top: 20px;
+  /* padding: 30px; */
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* .footer-end .footer-links .link-item { */
+/* border: solid thin #fff; */
+/* } */
+
+.footer-end .footer-copyright {
+  /* border: solid thin #fff; */
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer .footer-divider {
+  border: solid thin #212121;
+  margin: 0px 120px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.brand-name-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Tablet Breakpoint */
+@media only screen and (max-width: 1040px) {
+  .landing-area {
+    flex-direction: column-reverse;
+    padding: 20px 20%;
+    gap: 0px;
+    /* justify-content: space-around; */
+    /* border: solid thin #fff; */
+    gap: 40px;
+  }
+  .landing-area .landing-area-left {
+    display: flex;
+  }
+
+  .landing-area .landing-area-left .heading {
+    font-size: 3rem;
+  }
+
+  .landing-area .landing-area-right img {
+    border-radius: 0px;
+  }
+
+  .innovation-section .heading .heading-image {
+    display: none;
+  }
+
+  .innovation-section .heading .heading-text {
+    font-size: 3rem;
+  }
+  .innovation-section {
+    padding: 20px 20%;
+  }
+
+  .innovation-section .vision .vision-image {
+    display: none;
+  }
+  .news .news-grid {
+    grid-template-columns: auto auto;
+  }
+  .partners {
+    grid-template-columns: auto auto;
+  }
+}
+.about-us-container {
+  margin: auto;
+  padding: 120px;
+}
+/* Existing CSS ... */
+/* ... */
+
+/* iPhone 13 Pro and similar screen sizes */
+@media only screen and (max-width: 768px) {
+  /* Common layout adjustments */
+  .header,
+  .landing-area,
+  .innovation-section,
+  .news,
+  .partners {
+    padding: 20px;
+  }
+
+  /* Header adjustments */
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand,
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Landing Area Adjustments */
+  .landing-area {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .landing-area .landing-area-left .heading {
+    font-size: 2.5rem;
+  }
+
+  .landing-area .landing-area-right img {
+    max-width: 90%;
+  }
+
+  /* Innovation Section */
+  .innovation-section .heading .heading-text {
+    font-size: 2rem;
+  }
+
+  /* News section */
+  .news .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Partners section */
+  .partners {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer adjustments */
+  .footer .footer-content-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resources .resources-links .resources-link-item {
+    text-align: left;
+  }
+
+  /* Show the menu icon and hide the nav items on mobile */
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
