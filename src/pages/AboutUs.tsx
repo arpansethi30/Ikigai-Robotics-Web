@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 
 const AboutUs: React.FC = () => {
   return (
@@ -31,6 +32,8 @@ const AboutUs: React.FC = () => {
           </p>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

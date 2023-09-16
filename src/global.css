@@ -293,22 +293,22 @@ nav ul li a.link:hover {
 
 .partners {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
 .partners img {
-  width: 8%;
+  width: 15%;
   object-fit: contain;
 }
 
 .footer {
   background-color: #101010;
+  padding: 80px 120px;
 }
 
 .footer .footer-content-container {
   display: flex;
-  padding: 80px 120px 0px 120px;
   /* border-bottom: solid thin #fff; */
 }
 
@@ -395,13 +395,12 @@ nav ul li a.link:hover {
 
 .footer-end {
   display: flex;
-  padding: 0px 120px 50px 120px;
 }
 
 .footer-end .footer-links {
   display: flex;
   flex: 1;
-  gap: 15px;
+  gap: 45px;
   padding-top: 20px;
   /* padding: 30px; */
   align-items: center;
@@ -486,6 +485,7 @@ nav ul li a.link:hover {
     grid-template-columns: auto auto;
   }
 }
+
 .about-us-container {
   margin: auto;
   padding: 120px;

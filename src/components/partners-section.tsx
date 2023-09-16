@@ -3,7 +3,7 @@ interface PartnersSectionProps {}
 export const PartnersSection: React.FC<PartnersSectionProps> = ({}) => {
   return (
     <>
-      <div className="partners">
+      <div className="pt-10 pb-20 partners">
         <img src="assets/make-in-india.png" alt="make-in-india" />
         <img
           src="assets/ministry-of-commerce-and-industry.png"

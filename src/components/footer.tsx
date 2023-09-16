@@ -7,10 +7,14 @@ interface FooterProps {}
 export const Footer: React.FC<FooterProps> = ({}) => {
   return (
     <div className="footer">
+      <PartnersSection />
       <div className="footer-content-container">
-        <div className="footer-container-left flex flex-col gap-[80px]">
+        <div className="footer-container-left flex flex-col gap-[20px]">
           <Logo />
-          <PartnersSection />
+          <div>
+            <p className="mb-2 font-bold">Email Us</p>
+            <p className="para-font">hello@ikigairobotics.com</p>
+          </div>
         </div>
         <div className="footer-container-right">
           <div className="resources">
@@ -38,6 +42,7 @@ export const Footer: React.FC<FooterProps> = ({}) => {
               </div>
             </div>
           </div>
+
           <div className="footer-links">
             <div className="footer-link-item">
               <Link
@@ -93,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         </div>
       </div>
 
-      <div className="footer-end mt-[60px]">
+      <div className="footer-end mt-[100px]">
         <div className="footer-links">
           <div className="link-item">
             <Link to="/coming-soon" className="link">
@@ -117,7 +122,7 @@ export const Footer: React.FC<FooterProps> = ({}) => {
           </div>
         </div>
         <div className="footer-copyright para-text">
-          © COPYRIGHT 2023, IKIGAIROBOTICS LLP
+          © Copyright 2023, Ikigai Robotics Pvt. Ltd.
         </div>
       </div>
     </div>

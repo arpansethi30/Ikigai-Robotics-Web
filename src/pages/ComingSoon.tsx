@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 
 const ComingSoon: FunctionComponent = () => {
   return (
@@ -17,6 +18,7 @@ const ComingSoon: FunctionComponent = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

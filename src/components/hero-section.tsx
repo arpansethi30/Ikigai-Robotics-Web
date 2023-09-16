@@ -6,7 +6,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({}) => {
       <div className="landing-area-left">
         <div className="flex items-end content gap-[120px]">
           <h1 className={`text-[100px]`}>
-            Redefining
+            Redefining.
             <br />
             World.
           </h1>

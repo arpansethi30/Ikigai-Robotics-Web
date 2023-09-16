@@ -6,11 +6,11 @@ export const InnovationSection: React.FC<InnovationSectionProps> = ({}) => {
       <div className="flex items-center justify-between align-middle heading">
         <div className="flex-1 innovation-content">
           <h1 className="leading-[1.7] heading-text">
-            Innovation
+            Innovation.
             <br />
-            Automation
+            Automation.
             <br />
-            Evolution
+            Evolution.
           </h1>
           <p className="description w-[70%] para-text">
             Channeling purpose to pioneer the future. We intertwine passion and
